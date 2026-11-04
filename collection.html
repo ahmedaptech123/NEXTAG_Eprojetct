@@ -1,346 +1,895 @@
+
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="NEXTAG premium purses and wallets collection.">
-<title>Purses & Wallets Collection | NEXTAG</title><link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="css/style.css">
-</head><body data-page="purses">
+<html lang="en">
 
-<div class="announcement"><marquee behavior="scroll" direction="left" scrollamount="4">NEXTAG • TIMELESS STYLE, EVERYDAY ELEGANCE • EXPLORE OUR PURSE &amp; WALLET COLLECTION • A REFINED EDIT FOR EVERY OCCASION</marquee></div>
-<header class="navbar">
-  <a class="brand-lockup" href="index.html" aria-label="NEXTAG home">
-    <span class="logo-mark"><span>N</span></span>
-    <span><span class="brand-name">NEXTAG</span><span class="brand-tag">PURSES &amp; WALLETS</span></span>
-  </a>
-  <button class="menu-button" type="button" onclick="toggleMenu()">MENU</button>
-  <nav class="nav-links" id="navLinks">
-    <a href="index.html">Home</a><a href="brands.html">Brands</a><a href="collection.html">Collection</a>
-    <a href="compare.html">Compare</a><a href="about.html">About</a>
-    <a href="location.html">Location</a><a href="contact.html">Contact</a>
-  </nav>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<main>
-<section class="page-hero"><p class="eyebrow">NEXTAG COLLECTION</p><h1>Purses &amp; Wallets</h1><p>Explore all 20 editable product cards in one place. Choose a category below, search by name or brand, and compare your favourites.</p></section>
-<section class="section">
-<div class="toolbar">
-  <div><label class="eyebrow" for="brandFilter">FILTER BY BRAND</label><br><select id="brandFilter"><option value="All">All brands</option><option>Louis Vuitton</option><option>Gucci</option><option>Prada</option><option>Chanel</option><option>Michael Kors</option><option>Coach</option><option>Guess</option><option>Calvin Klein</option></select></div>
-  <div><label class="eyebrow" for="searchBox">SEARCH COLLECTION</label><br><input id="searchBox" type="search" placeholder="Search name, brand or style..."></div>
-  <div><p class="eyebrow" id="resultCount">20 PRODUCTS</p><p class="small-note" id="compareNote">Select products to compare</p></div>
-</div>
-<h2 class="section-heading">The Purse Collection</h2><p class="small-note">10 purse styles</p>
-<div class="product-grid" id="purseGrid">
-<article class="product-card" data-brand="Louis Vuitton" data-kind="purse" data-name="purse 01 louis vuitton shoulder bag">
-  <div class="product-art art-1">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">01</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Louis Vuitton</p><h3>Purse 01</h3><p class="product-category">Shoulder Bag</p>
-    <p class="product-description">Premium everyday shoulder bag.</p>
-    <div class="product-bottom"><strong>PKR 24,500</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="1" data-name="Purse 01" data-brand="Louis Vuitton" data-category="Shoulder Bag" data-price="PKR 24,500" data-material="Leather" data-color="Tan" data-size="28 × 20 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse01.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Gucci" data-kind="purse" data-name="purse 02 gucci tote bag">
-  <div class="product-art art-2">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">02</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Gucci</p><h3>Purse 02</h3><p class="product-category">Tote Bag</p>
-    <p class="product-description">Roomy tote for everyday essentials.</p>
-    <div class="product-bottom"><strong>PKR 31,000</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="2" data-name="Purse 02" data-brand="Gucci" data-category="Tote Bag" data-price="PKR 31,000" data-material="Textured leather" data-color="Chocolate" data-size="34 × 26 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse02.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Prada" data-kind="purse" data-name="purse 03 prada crossbody bag">
-  <div class="product-art art-3">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">03</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Prada</p><h3>Purse 03</h3><p class="product-category">Crossbody Bag</p>
-    <p class="product-description">A compact crossbody design.</p>
-    <div class="product-bottom"><strong>PKR 28,750</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="3" data-name="Purse 03" data-brand="Prada" data-category="Crossbody Bag" data-price="PKR 28,750" data-material="Saffiano leather" data-color="Black" data-size="22 × 16 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse03.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Chanel" data-kind="purse" data-name="purse 04 chanel clutch bag">
-  <div class="product-art art-0">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">04</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Chanel</p><h3>Purse 04</h3><p class="product-category">Clutch Bag</p>
-    <p class="product-description">An elegant evening clutch.</p>
-    <div class="product-bottom"><strong>PKR 35,500</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="4" data-name="Purse 04" data-brand="Chanel" data-category="Clutch Bag" data-price="PKR 35,500" data-material="Quilted leather" data-color="Burgundy" data-size="20 × 12 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse04.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Michael Kors" data-kind="purse" data-name="purse 05 michael kors handbag">
-  <div class="product-art art-1">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">05</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Michael Kors</p><h3>Purse 05</h3><p class="product-category">Handbag</p>
-    <p class="product-description">A structured handbag with a classic shape.</p>
-    <div class="product-bottom"><strong>PKR 19,900</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="5" data-name="Purse 05" data-brand="Michael Kors" data-category="Handbag" data-price="PKR 19,900" data-material="Pebbled leather" data-color="Caramel" data-size="30 × 22 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse05.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Coach" data-kind="purse" data-name="purse 06 coach mini bag">
-  <div class="product-art art-2">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">06</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Coach</p><h3>Purse 06</h3><p class="product-category">Mini Bag</p>
-    <p class="product-description">A small bag for light essentials.</p>
-    <div class="product-bottom"><strong>PKR 17,500</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="6" data-name="Purse 06" data-brand="Coach" data-category="Mini Bag" data-price="PKR 17,500" data-material="Coated canvas" data-color="Cream" data-size="18 × 14 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse06.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Guess" data-kind="purse" data-name="purse 07 guess shoulder bag">
-  <div class="product-art art-3">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">07</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Guess</p><h3>Purse 07</h3><p class="product-category">Shoulder Bag</p>
-    <p class="product-description">A versatile design for casual outings.</p>
-    <div class="product-bottom"><strong>PKR 16,800</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="7" data-name="Purse 07" data-brand="Guess" data-category="Shoulder Bag" data-price="PKR 16,800" data-material="Faux leather" data-color="Mocha" data-size="26 × 18 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse07.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Calvin Klein" data-kind="purse" data-name="purse 08 calvin klein tote bag">
-  <div class="product-art art-0">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">08</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Calvin Klein</p><h3>Purse 08</h3><p class="product-category">Tote Bag</p>
-    <p class="product-description">A clean, minimal tote silhouette.</p>
-    <div class="product-bottom"><strong>PKR 21,250</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="8" data-name="Purse 08" data-brand="Calvin Klein" data-category="Tote Bag" data-price="PKR 21,250" data-material="Smooth leather" data-color="Dark brown" data-size="32 × 25 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse08.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Prada" data-kind="purse" data-name="purse 09 prada crossbody bag">
-  <div class="product-art art-1">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">09</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Prada</p><h3>Purse 09</h3><p class="product-category">Crossbody Bag</p>
-    <p class="product-description">A practical crossbody with a refined finish.</p>
-    <div class="product-bottom"><strong>PKR 29,400</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="9" data-name="Purse 09" data-brand="Prada" data-category="Crossbody Bag" data-price="PKR 29,400" data-material="Leather" data-color="Olive" data-size="23 × 17 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse09.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Coach" data-kind="purse" data-name="purse 10 coach clutch bag">
-  <div class="product-art art-2">
-    <span class="art-label">PURSE</span>
-    <span class="art-number">10</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Coach</p><h3>Purse 10</h3><p class="product-category">Clutch Bag</p>
-    <p class="product-description">A compact clutch for special occasions.</p>
-    <div class="product-bottom"><strong>PKR 15,900</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="10" data-name="Purse 10" data-brand="Coach" data-category="Clutch Bag" data-price="PKR 15,900" data-material="Leather" data-color="Black" data-size="21 × 13 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/purse10.docx" download>Download details ↗</a>
-  </div>
-</article>
-</div>
-<h2 class="section-heading" style="margin-top:55px">The Wallet Collection</h2><p class="small-note">10 wallet styles</p>
-<div class="product-grid" id="walletGrid">
-<article class="product-card" data-brand="Louis Vuitton" data-kind="wallet" data-name="wallet 01 louis vuitton bifold wallet">
-  <div class="product-art art-3">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">11</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Louis Vuitton</p><h3>Wallet 01</h3><p class="product-category">Bifold Wallet</p>
-    <p class="product-description">A classic bifold wallet with neat compartments.</p>
-    <div class="product-bottom"><strong>PKR 12,500</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="11" data-name="Wallet 01" data-brand="Louis Vuitton" data-category="Bifold Wallet" data-price="PKR 12,500" data-material="Leather" data-color="Brown" data-size="11 × 9 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet01.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Gucci" data-kind="wallet" data-name="wallet 02 gucci trifold wallet">
-  <div class="product-art art-0">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">12</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Gucci</p><h3>Wallet 02</h3><p class="product-category">Trifold Wallet</p>
-    <p class="product-description">A compact trifold wallet for daily use.</p>
-    <div class="product-bottom"><strong>PKR 14,800</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="12" data-name="Wallet 02" data-brand="Gucci" data-category="Trifold Wallet" data-price="PKR 14,800" data-material="Textured leather" data-color="Black" data-size="10 × 8 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet02.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Prada" data-kind="wallet" data-name="wallet 03 prada card holder">
-  <div class="product-art art-1">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">13</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Prada</p><h3>Wallet 03</h3><p class="product-category">Card Holder</p>
-    <p class="product-description">A slim card holder for essential cards.</p>
-    <div class="product-bottom"><strong>PKR 9,500</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="13" data-name="Wallet 03" data-brand="Prada" data-category="Card Holder" data-price="PKR 9,500" data-material="Saffiano leather" data-color="Navy" data-size="10 × 7 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet03.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Chanel" data-kind="wallet" data-name="wallet 04 chanel long wallet">
-  <div class="product-art art-2">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">14</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Chanel</p><h3>Wallet 04</h3><p class="product-category">Long Wallet</p>
-    <p class="product-description">A long wallet with an elegant profile.</p>
-    <div class="product-bottom"><strong>PKR 18,900</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="14" data-name="Wallet 04" data-brand="Chanel" data-category="Long Wallet" data-price="PKR 18,900" data-material="Quilted leather" data-color="Burgundy" data-size="19 × 10 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet04.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Michael Kors" data-kind="wallet" data-name="wallet 05 michael kors zip wallet">
-  <div class="product-art art-3">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">15</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Michael Kors</p><h3>Wallet 05</h3><p class="product-category">Zip Wallet</p>
-    <p class="product-description">A zip-around wallet with organized storage.</p>
-    <div class="product-bottom"><strong>PKR 13,250</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="15" data-name="Wallet 05" data-brand="Michael Kors" data-category="Zip Wallet" data-price="PKR 13,250" data-material="Pebbled leather" data-color="Caramel" data-size="19 × 10 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet05.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Coach" data-kind="wallet" data-name="wallet 06 coach compact wallet">
-  <div class="product-art art-0">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">16</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Coach</p><h3>Wallet 06</h3><p class="product-category">Compact Wallet</p>
-    <p class="product-description">A compact wallet that fits smaller bags.</p>
-    <div class="product-bottom"><strong>PKR 10,750</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="16" data-name="Wallet 06" data-brand="Coach" data-category="Compact Wallet" data-price="PKR 10,750" data-material="Leather" data-color="Tan" data-size="10 × 8 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet06.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Guess" data-kind="wallet" data-name="wallet 07 guess bifold wallet">
-  <div class="product-art art-1">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">17</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Guess</p><h3>Wallet 07</h3><p class="product-category">Bifold Wallet</p>
-    <p class="product-description">A practical bifold wallet with card slots.</p>
-    <div class="product-bottom"><strong>PKR 8,900</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="17" data-name="Wallet 07" data-brand="Guess" data-category="Bifold Wallet" data-price="PKR 8,900" data-material="Faux leather" data-color="Mocha" data-size="11 × 9 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet07.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Calvin Klein" data-kind="wallet" data-name="wallet 08 calvin klein card holder">
-  <div class="product-art art-2">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">18</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Calvin Klein</p><h3>Wallet 08</h3><p class="product-category">Card Holder</p>
-    <p class="product-description">A minimal card holder with a slim design.</p>
-    <div class="product-bottom"><strong>PKR 7,800</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="18" data-name="Wallet 08" data-brand="Calvin Klein" data-category="Card Holder" data-price="PKR 7,800" data-material="Smooth leather" data-color="Charcoal" data-size="10 × 7 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet08.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Prada" data-kind="wallet" data-name="wallet 09 prada zip wallet">
-  <div class="product-art art-3">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">19</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Prada</p><h3>Wallet 09</h3><p class="product-category">Zip Wallet</p>
-    <p class="product-description">A refined zip wallet with useful compartments.</p>
-    <div class="product-bottom"><strong>PKR 16,400</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="19" data-name="Wallet 09" data-brand="Prada" data-category="Zip Wallet" data-price="PKR 16,400" data-material="Leather" data-color="Olive" data-size="18 × 10 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet09.docx" download>Download details ↗</a>
-  </div>
-</article>
-<article class="product-card" data-brand="Coach" data-kind="wallet" data-name="wallet 10 coach long wallet">
-  <div class="product-art art-0">
-    <span class="art-label">WALLET</span>
-    <span class="art-number">20</span><div class="art-shape"></div>
-    <span class="edit-hint">EDIT THIS CARD</span>
-  </div>
-  <div class="product-info">
-    <p class="eyebrow">Coach</p><h3>Wallet 10</h3><p class="product-category">Long Wallet</p>
-    <p class="product-description">A long wallet for cards and notes.</p>
-    <div class="product-bottom"><strong>PKR 11,900</strong>
-      <label class="compare-label"><input type="checkbox" class="compare-check" data-id="20" data-name="Wallet 10" data-brand="Coach" data-category="Long Wallet" data-price="PKR 11,900" data-material="Leather" data-color="Black" data-size="18 × 9 cm"> Compare</label>
-    </div>
-    <a class="text-link" href="docs/wallet10.docx" download>Download details ↗</a>
-  </div>
-</article>
-</div>
-<div class="compare-actions"><a class="button" href="compare.html">Compare selected products</a><button class="button button-outline" type="button" onclick="clearFilters()">Clear filters</button></div>
-</section></main>
-<footer class="footer"><div class="footer-grid">
-<div><h3>NEXTAG</h3><p>A considered collection of purses and wallets, bringing together timeless silhouettes, rich textures, and everyday function.</p></div>
-<div><h3>Explore</h3><a href="collection.html">Purse Collection</a><a href="collection.html">Wallet Collection</a><a href="brands.html">Our Brands</a><a href="compare.html">Compare Products</a></div>
-<div><h3>Get in touch</h3><a href="contact.html">Contact Us</a><a href="location.html">Store Location</a><a href="mailto:hello@nextag.example">hello@nextag.example</a></div>
-</div><div class="footer-bottom">© 2026 NEXTAG. Student eProject demonstration. Sample product details can be edited.</div></footer>
+    <meta name="description" content="Explore NEXTAG's premium collection of purses and wallets.">
 
-<script src="js/main.js"></script>
-</body></html>
+    <title>NEXTAG | Purses & Wallets Collection</title>
+
+    <link rel="icon" href="favicon.jpg">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Existing JavaScript for menu and comparison -->
+    <script src="js/main.js" defer></script>
+
+    <!-- Collection page JavaScript -->
+    <script src="js/collection.js" defer></script>
+</head>
+
+<body class="collection-page" data-page="collection">
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        Premium Purses & Wallets — Discover Timeless Style
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <a href="index.html" class="brand-lockup">
+
+            <span class="logo-mark">
+                <span>N</span>
+            </span>
+
+            <span>
+                <span class="brand-name">NEXTAG</span>
+                <span class="brand-tag">PREMIUM ACCESSORIES</span>
+            </span>
+
+        </a>
+
+        <button class="menu-button" onclick="toggleMenu()" type="button">
+            MENU
+        </button>
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="index.html">HOME</a>
+            <a href="brands.html">BRANDS</a>
+            <a href="collection.html" class="active">COLLECTION</a>
+            <a href="compare.html">COMPARE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="location.html">LOCATION</a>
+            <a href="contact.html">CONTACT</a>
+
+        </div>
+
+    </nav>
+
+    <!-- Collection Hero -->
+    <header class="page-hero collection-hero">
+
+        <span class="eyebrow">THE NEXTAG EDIT</span>
+
+        <h1>Our Collection</h1>
+
+        <p>DISCOVER ELEGANCE IN EVERY DETAIL</p>
+
+    </header>
+
+    <!-- Introduction -->
+    <section class="section collection-intro">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">TIMELESS STYLE</span>
+
+            <h2>Explore Our Products</h2>
+
+            <p>
+                Discover our carefully selected collection of premium
+                purses and wallets from popular fashion brands.
+                Find the perfect accessory for every occasion.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Search and Brand Filter -->
+    <div class="collection-toolbar">
+
+        <input
+            type="search"
+            id="searchBox"
+            placeholder="Search purses or wallets..."
+            aria-label="Search products">
+
+        <select id="brandFilter" aria-label="Filter by brand">
+
+            <option value="all">All Brands</option>
+            <option value="Louis Vuitton">Louis Vuitton</option>
+            <option value="Gucci">Gucci</option>
+            <option value="Prada">Prada</option>
+            <option value="Chanel">Chanel</option>
+            <option value="Michael Kors">Michael Kors</option>
+            <option value="Coach">Coach</option>
+            <option value="Guess">Guess</option>
+            <option value="Calvin Klein">Calvin Klein</option>
+
+        </select>
+
+        <button class="button button-outline" id="clearFilters" type="button">
+            CLEAR FILTERS
+        </button>
+
+    </div>
+
+    <main>
+
+        <!-- PURSES COLLECTION -->
+        <section class="section collection-section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">THE PURSE EDIT</span>
+
+                <h2>Elegant Purses</h2>
+
+                <p>10 BEAUTIFUL DESIGNS FOR EVERY OCCASION</p>
+
+            </div>
+
+            <div class="product-grid" id="purseGrid">
+
+                <!-- PURSE 01 -->
+                <div class="product-card"
+                    data-brand="Louis Vuitton"
+                    data-name="classic shoulder bag louis vuitton">
+
+                    <div class="collection-product-image">
+                        <img src="images/p01.jpg" alt="Louis Vuitton shoulder purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Shoulder Bag</p>
+                        <h3>Classic Shoulder Bag</h3>
+                        <p class="brand-name">Louis Vuitton</p>
+                        <p class="price">PKR 24,500</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p01"
+                                    data-name="Classic Shoulder Bag"
+                                    data-brand="Louis Vuitton"
+                                    data-category="Shoulder Bag"
+                                    data-price="PKR 24,500"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 02 -->
+                <div class="product-card"
+                    data-brand="Gucci"
+                    data-name="elegant tote bag gucci">
+
+                    <div class="collection-product-image">
+                        <img src="images/p02.jpg" alt="Gucci elegant tote purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Tote Bag</p>
+                        <h3>Elegant Tote Bag</h3>
+                        <p class="brand-name">Gucci</p>
+                        <p class="price">PKR 31,000</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p02"
+                                    data-name="Elegant Tote Bag"
+                                    data-brand="Gucci"
+                                    data-category="Tote Bag"
+                                    data-price="PKR 31,000"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 03 -->
+                <div class="product-card"
+                    data-brand="Prada"
+                    data-name="modern crossbody bag prada">
+
+                    <div class="collection-product-image">
+                        <img src="images/p03.jpg" alt="Prada crossbody purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Crossbody Bag</p>
+                        <h3>Modern Crossbody Bag</h3>
+                        <p class="brand-name">Prada</p>
+                        <p class="price">PKR 28,750</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p03"
+                                    data-name="Modern Crossbody Bag"
+                                    data-brand="Prada"
+                                    data-category="Crossbody Bag"
+                                    data-price="PKR 28,750"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 04 -->
+                <div class="product-card"
+                    data-brand="Chanel"
+                    data-name="luxury clutch bag chanel">
+
+                    <div class="collection-product-image">
+                        <img src="images/p04.jpg" alt="Chanel clutch purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Clutch Bag</p>
+                        <h3>Luxury Clutch Bag</h3>
+                        <p class="brand-name">Chanel</p>
+                        <p class="price">PKR 35,500</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p04"
+                                    data-name="Luxury Clutch Bag"
+                                    data-brand="Chanel"
+                                    data-category="Clutch Bag"
+                                    data-price="PKR 35,500"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 05 -->
+                <div class="product-card"
+                    data-brand="Michael Kors"
+                    data-name="premium handbag michael kors">
+
+                    <div class="collection-product-image">
+                        <img src="images/p05.jpg" alt="Michael Kors handbag" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Handbag</p>
+                        <h3>Premium Handbag</h3>
+                        <p class="brand-name">Michael Kors</p>
+                        <p class="price">PKR 19,900</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p05"
+                                    data-name="Premium Handbag"
+                                    data-brand="Michael Kors"
+                                    data-category="Handbag"
+                                    data-price="PKR 19,900"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 06 -->
+                <div class="product-card"
+                    data-brand="Coach"
+                    data-name="chic mini bag coach">
+
+                    <div class="collection-product-image">
+                        <img src="images/p06.jpg" alt="Coach mini purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Mini Bag</p>
+                        <h3>Chic Mini Bag</h3>
+                        <p class="brand-name">Coach</p>
+                        <p class="price">PKR 17,500</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p06"
+                                    data-name="Chic Mini Bag"
+                                    data-brand="Coach"
+                                    data-category="Mini Bag"
+                                    data-price="PKR 17,500"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 07 -->
+                <div class="product-card"
+                    data-brand="Guess"
+                    data-name="stylish shoulder bag guess">
+
+                    <div class="collection-product-image">
+                        <img src="images/p07.jpg" alt="Guess shoulder purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Shoulder Bag</p>
+                        <h3>Stylish Shoulder Bag</h3>
+                        <p class="brand-name">Guess</p>
+                        <p class="price">PKR 16,800</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p07"
+                                    data-name="Stylish Shoulder Bag"
+                                    data-brand="Guess"
+                                    data-category="Shoulder Bag"
+                                    data-price="PKR 16,800"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 08 -->
+                <div class="product-card"
+                    data-brand="Calvin Klein"
+                    data-name="everyday tote bag calvin klein">
+
+                    <div class="collection-product-image">
+                        <img src="images/p08.jpg" alt="Calvin Klein tote purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Tote Bag</p>
+                        <h3>Everyday Tote Bag</h3>
+                        <p class="brand-name">Calvin Klein</p>
+                        <p class="price">PKR 21,250</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p08"
+                                    data-name="Everyday Tote Bag"
+                                    data-brand="Calvin Klein"
+                                    data-category="Tote Bag"
+                                    data-price="PKR 21,250"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 09 -->
+                <div class="product-card"
+                    data-brand="Prada"
+                    data-name="designer crossbody bag prada">
+
+                    <div class="collection-product-image">
+                        <img src="images/p09.jpg" alt="Prada designer crossbody purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Crossbody Bag</p>
+                        <h3>Designer Crossbody Bag</h3>
+                        <p class="brand-name">Prada</p>
+                        <p class="price">PKR 29,400</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p09"
+                                    data-name="Designer Crossbody Bag"
+                                    data-brand="Prada"
+                                    data-category="Crossbody Bag"
+                                    data-price="PKR 29,400"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PURSE 10 -->
+                <div class="product-card"
+                    data-brand="Coach"
+                    data-name="elegant clutch bag coach">
+
+                    <div class="collection-product-image">
+                        <img src="images/p10.jpg" alt="Coach elegant clutch purse" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Clutch Bag</p>
+                        <h3>Elegant Clutch Bag</h3>
+                        <p class="brand-name">Coach</p>
+                        <p class="price">PKR 15,900</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="p10"
+                                    data-name="Elegant Clutch Bag"
+                                    data-brand="Coach"
+                                    data-category="Clutch Bag"
+                                    data-price="PKR 15,900"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="no-results">No matching purses found.</p>
+
+            </div>
+
+            <p class="collection-count" id="purseResultCount">10 PURSES</p>
+
+        </section>
+
+        <!-- WALLETS COLLECTION -->
+        <section class="section collection-section">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">THE WALLET EDIT</span>
+
+                <h2>Premium Wallets</h2>
+
+                <p>10 SOPHISTICATED DESIGNS FOR EVERYDAY USE</p>
+
+            </div>
+
+            <div class="product-grid" id="walletGrid">
+
+                <!-- WALLET 01 -->
+                <div class="product-card"
+                    data-brand="Louis Vuitton"
+                    data-name="classic bifold wallet louis vuitton">
+
+                    <div class="collection-product-image">
+                        <img src="images/w01.jpg" alt="Louis Vuitton bifold wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Bifold Wallet</p>
+                        <h3>Classic Bifold Wallet</h3>
+                        <p class="brand-name">Louis Vuitton</p>
+                        <p class="price">PKR 12,500</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w01"
+                                    data-name="Classic Bifold Wallet"
+                                    data-brand="Louis Vuitton"
+                                    data-category="Bifold Wallet"
+                                    data-price="PKR 12,500"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 02 -->
+                <div class="product-card"
+                    data-brand="Gucci"
+                    data-name="elegant trifold wallet gucci">
+
+                    <div class="collection-product-image">
+                        <img src="images/w02.jpg" alt="Gucci trifold wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Trifold Wallet</p>
+                        <h3>Elegant Trifold Wallet</h3>
+                        <p class="brand-name">Gucci</p>
+                        <p class="price">PKR 14,800</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w02"
+                                    data-name="Elegant Trifold Wallet"
+                                    data-brand="Gucci"
+                                    data-category="Trifold Wallet"
+                                    data-price="PKR 14,800"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 03 -->
+                <div class="product-card"
+                    data-brand="Prada"
+                    data-name="minimal card holder prada">
+
+                    <div class="collection-product-image">
+                        <img src="images/w03.jpg" alt="Prada card holder" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Card Holder</p>
+                        <h3>Minimal Card Holder</h3>
+                        <p class="brand-name">Prada</p>
+                        <p class="price">PKR 9,500</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w03"
+                                    data-name="Minimal Card Holder"
+                                    data-brand="Prada"
+                                    data-category="Card Holder"
+                                    data-price="PKR 9,500"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 04 -->
+                <div class="product-card"
+                    data-brand="Chanel"
+                    data-name="luxury long wallet chanel">
+
+                    <div class="collection-product-image">
+                        <img src="images/w04.jpg" alt="Chanel long wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Long Wallet</p>
+                        <h3>Luxury Long Wallet</h3>
+                        <p class="brand-name">Chanel</p>
+                        <p class="price">PKR 18,900</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w04"
+                                    data-name="Luxury Long Wallet"
+                                    data-brand="Chanel"
+                                    data-category="Long Wallet"
+                                    data-price="PKR 18,900"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 05 -->
+                <div class="product-card"
+                    data-brand="Michael Kors"
+                    data-name="premium zip wallet michael kors">
+
+                    <div class="collection-product-image">
+                        <img src="images/w05.jpg" alt="Michael Kors zip wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Zip Wallet</p>
+                        <h3>Premium Zip Wallet</h3>
+                        <p class="brand-name">Michael Kors</p>
+                        <p class="price">PKR 13,250</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w05"
+                                    data-name="Premium Zip Wallet"
+                                    data-brand="Michael Kors"
+                                    data-category="Zip Wallet"
+                                    data-price="PKR 13,250"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 06 -->
+                <div class="product-card"
+                    data-brand="Coach"
+                    data-name="compact everyday wallet coach">
+
+                    <div class="collection-product-image">
+                        <img src="images/w06.jpg" alt="Coach compact wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Compact Wallet</p>
+                        <h3>Compact Everyday Wallet</h3>
+                        <p class="brand-name">Coach</p>
+                        <p class="price">PKR 10,750</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w06"
+                                    data-name="Compact Everyday Wallet"
+                                    data-brand="Coach"
+                                    data-category="Compact Wallet"
+                                    data-price="PKR 10,750"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 07 -->
+                <div class="product-card"
+                    data-brand="Guess"
+                    data-name="stylish bifold wallet guess">
+
+                    <div class="collection-product-image">
+                        <img src="images/w07.jpg" alt="Guess bifold wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Bifold Wallet</p>
+                        <h3>Stylish Bifold Wallet</h3>
+                        <p class="brand-name">Guess</p>
+                        <p class="price">PKR 8,900</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w07"
+                                    data-name="Stylish Bifold Wallet"
+                                    data-brand="Guess"
+                                    data-category="Bifold Wallet"
+                                    data-price="PKR 8,900"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 08 -->
+                <div class="product-card"
+                    data-brand="Calvin Klein"
+                    data-name="modern card holder calvin klein">
+
+                    <div class="collection-product-image">
+                        <img src="images/w08.jpg" alt="Calvin Klein card holder" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Card Holder</p>
+                        <h3>Modern Card Holder</h3>
+                        <p class="brand-name">Calvin Klein</p>
+                        <p class="price">PKR 7,800</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w08"
+                                    data-name="Modern Card Holder"
+                                    data-brand="Calvin Klein"
+                                    data-category="Card Holder"
+                                    data-price="PKR 7,800"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 09 -->
+                <div class="product-card"
+                    data-brand="Prada"
+                    data-name="designer zip wallet prada">
+
+                    <div class="collection-product-image">
+                        <img src="images/w09.jpg" alt="Prada zip wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Zip Wallet</p>
+                        <h3>Designer Zip Wallet</h3>
+                        <p class="brand-name">Prada</p>
+                        <p class="price">PKR 16,400</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w09"
+                                    data-name="Designer Zip Wallet"
+                                    data-brand="Prada"
+                                    data-category="Zip Wallet"
+                                    data-price="PKR 16,400"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- WALLET 10 -->
+                <div class="product-card"
+                    data-brand="Coach"
+                    data-name="classic long wallet coach">
+
+                    <div class="collection-product-image">
+                        <img src="images/w10.jpg" alt="Coach long wallet" loading="lazy">
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">Long Wallet</p>
+                        <h3>Classic Long Wallet</h3>
+                        <p class="brand-name">Coach</p>
+                        <p class="price">PKR 11,900</p>
+
+                        <div class="product-bottom">
+                            <label class="compare-label">
+                                <input type="checkbox" class="compare-check"
+                                    data-id="w10"
+                                    data-name="Classic Long Wallet"
+                                    data-brand="Coach"
+                                    data-category="Long Wallet"
+                                    data-price="PKR 11,900"
+                                    data-material="Not specified"
+                                    data-color="Not specified"
+                                    data-size="Not specified">
+                                Compare
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="no-results">No matching wallets found.</p>
+
+            </div>
+
+            <p class="collection-count" id="walletResultCount">10 WALLETS</p>
+
+            <div class="center-action">
+                <a href="compare.html" class="button">VIEW COMPARISON</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer collection-footer">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>NEXTAG</h3>
+                <p>
+                    Premium purses and wallets selected for timeless
+                    style and everyday elegance.
+                </p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="brands.html">Brands</a>
+                <a href="collection.html">Collection</a>
+            </div>
+
+            <div>
+                <h3>Information</h3>
+                <a href="about.html">About</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 NEXTAG. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
